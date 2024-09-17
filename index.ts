@@ -106,6 +106,14 @@ FriendlyLogger.log("Sending test messages");
 pagerSystem.sendMessage("1", "2", "Einstein, I've got a brilliant idea about apples!");
 pagerSystem.sendMessage("2", "1", "Newton, let's discuss the fabric of spacetime.");
 
+FriendlyLogger.log("Sending more messages between scientists");
+pagerSystem.sendMessage("3", "2", "Albert, I've made a breakthrough in radioactivity research!");
+pagerSystem.sendMessage("2", "3", "Fascinating, Marie! How does it relate to energy-mass equivalence?");
+pagerSystem.sendMessage("4", "1", "Isaac, I've been pondering the evolution of your apple tree.");
+pagerSystem.sendMessage("1", "4", "Charles, perhaps we could apply gravitational principles to natural selection?");
+pagerSystem.sendMessage("3", "4", "Darwin, have you considered the effects of radiation on evolution?");
+pagerSystem.sendMessage("4", "3", "Intriguing idea, Curie! Let's explore this further.");
+
 FriendlyLogger.log("Retrieving messages for Newton");
 const newtonMessages = pagerSystem.getMessagesForScientist("1");
 newtonMessages.forEach(msg => {

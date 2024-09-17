@@ -1,29 +1,50 @@
-🔬 6:11:05 PM - Initializing Scientific Pager System
-🔬 6:11:05 PM - Added scientist: Isaac Newton (Law of Universal Gravitation)
-🔬 6:11:05 PM - Added scientist: Albert Einstein (Theory of Relativity)
-🔬 6:11:05 PM - Added scientist: Marie Curie (Radioactivity)
-🔬 6:11:05 PM - Added scientist: Charles Darwin (Theory of Evolution)
-🔬 6:11:05 PM - Added scientist: Annonymous (The Big Kaboom)
-🔬 6:11:05 PM - Sending test messages
-🔬 6:11:05 PM - Message sent from Isaac Newton to Albert Einstein
-🔬 6:11:05 PM - Message sent from Albert Einstein to Isaac Newton
-🔬 6:11:05 PM - Retrieving messages for Newton
-🔬 6:11:05 PM - Retrieved 2 messages for Isaac Newton
-🔬 6:11:05 PM - Message from Isaac Newton to Albert Einstein: "Einstein, I've got a brilliant idea about apples!"
-🔬 6:11:05 PM - Message from Albert Einstein to Isaac Newton: "Newton, let's discuss the fabric of spacetime."
-🔬 6:11:05 PM - Initiating Chaos 42
-🔬 6:11:05 PM - Chaos 42 initiated by Annonymous. 5 scientists affected!
-🔬 6:11:05 PM - Checking messages after Chaos 42
-🔬 6:11:05 PM - Retrieved 3 messages for Isaac Newton
-🔬 6:11:05 PM - Message from Isaac Newton to Albert Einstein: "Einstein, I've got a brilliant idea about apples!"
-🔬 6:11:05 PM - Message from Albert Einstein to Isaac Newton: "Newton, let's discuss the fabric of spacetime."
-🔬 6:11:05 PM - Message from Annonymous to Isaac Newton: "168976 KABOOM!!!"
-🔬 6:11:05 PM - Retrieved 3 messages for Albert Einstein
-🔬 6:11:05 PM - Message from Isaac Newton to Albert Einstein: "Einstein, I've got a brilliant idea about apples!"
-🔬 6:11:05 PM - Message from Albert Einstein to Isaac Newton: "Newton, let's discuss the fabric of spacetime."
-🔬 6:11:05 PM - Message from Annonymous to Albert Einstein: "396546 KABOOM!!!"
-🔬 6:11:05 PM - Retrieved 1 messages for Marie Curie
-🔬 6:11:05 PM - Message from Annonymous to Marie Curie: "56890 KABOOM!!!"
-🔬 6:11:05 PM - Retrieved 1 messages for Charles Darwin
-🔬 6:11:05 PM - Message from Annonymous to Charles Darwin: "65149 KABOOM!!!"
-🔬 6:11:05 PM - Scientific Pager System demonstration completed
+🔬 6:13:33 PM - Initializing Scientific Pager System
+🔬 6:13:33 PM - Added scientist: Isaac Newton (Law of Universal Gravitation)
+🔬 6:13:33 PM - Added scientist: Albert Einstein (Theory of Relativity)
+🔬 6:13:33 PM - Added scientist: Marie Curie (Radioactivity)
+🔬 6:13:33 PM - Added scientist: Charles Darwin (Theory of Evolution)
+🔬 6:13:33 PM - Added scientist: Annonymous (The Big Kaboom)
+🔬 6:13:33 PM - Sending test messages
+🔬 6:13:33 PM - Message sent from Isaac Newton to Albert Einstein
+🔬 6:13:33 PM - Message sent from Albert Einstein to Isaac Newton
+🔬 6:13:33 PM - Sending more messages between scientists
+🔬 6:13:33 PM - Message sent from Marie Curie to Albert Einstein
+🔬 6:13:33 PM - Message sent from Albert Einstein to Marie Curie
+🔬 6:13:33 PM - Message sent from Charles Darwin to Isaac Newton
+🔬 6:13:33 PM - Message sent from Isaac Newton to Charles Darwin
+🔬 6:13:33 PM - Message sent from Marie Curie to Charles Darwin
+🔬 6:13:33 PM - Message sent from Charles Darwin to Marie Curie
+🔬 6:13:33 PM - Retrieving messages for Newton
+🔬 6:13:33 PM - Retrieved 4 messages for Isaac Newton
+🔬 6:13:33 PM - Message from Isaac Newton to Albert Einstein: "Einstein, I've got a brilliant idea about apples!"
+🔬 6:13:33 PM - Message from Albert Einstein to Isaac Newton: "Newton, let's discuss the fabric of spacetime."
+🔬 6:13:33 PM - Message from Charles Darwin to Isaac Newton: "Isaac, I've been pondering the evolution of your apple tree."
+🔬 6:13:33 PM - Message from Isaac Newton to Charles Darwin: "Charles, perhaps we could apply gravitational principles to natural selection?"
+🔬 6:13:33 PM - Initiating Chaos 42
+🔬 6:13:33 PM - Chaos 42 initiated by Annonymous. 5 scientists affected!
+🔬 6:13:33 PM - Checking messages after Chaos 42
+🔬 6:13:33 PM - Retrieved 5 messages for Isaac Newton
+🔬 6:13:33 PM - Message from Isaac Newton to Albert Einstein: "Einstein, I've got a brilliant idea about apples!"
+🔬 6:13:33 PM - Message from Albert Einstein to Isaac Newton: "Newton, let's discuss the fabric of spacetime."
+🔬 6:13:33 PM - Message from Charles Darwin to Isaac Newton: "Isaac, I've been pondering the evolution of your apple tree."
+🔬 6:13:33 PM - Message from Isaac Newton to Charles Darwin: "Charles, perhaps we could apply gravitational principles to natural selection?"
+🔬 6:13:33 PM - Message from Annonymous to Isaac Newton: "512496 KABOOM!!!"
+🔬 6:13:33 PM - Retrieved 5 messages for Albert Einstein
+🔬 6:13:33 PM - Message from Isaac Newton to Albert Einstein: "Einstein, I've got a brilliant idea about apples!"
+🔬 6:13:33 PM - Message from Albert Einstein to Isaac Newton: "Newton, let's discuss the fabric of spacetime."
+🔬 6:13:33 PM - Message from Marie Curie to Albert Einstein: "Albert, I've made a breakthrough in radioactivity research!"
+🔬 6:13:33 PM - Message from Albert Einstein to Marie Curie: "Fascinating, Marie! How does it relate to energy-mass equivalence?"
+🔬 6:13:33 PM - Message from Annonymous to Albert Einstein: "443275 KABOOM!!!"
+🔬 6:13:33 PM - Retrieved 5 messages for Marie Curie
+🔬 6:13:33 PM - Message from Marie Curie to Albert Einstein: "Albert, I've made a breakthrough in radioactivity research!"
+🔬 6:13:33 PM - Message from Albert Einstein to Marie Curie: "Fascinating, Marie! How does it relate to energy-mass equivalence?"
+🔬 6:13:33 PM - Message from Marie Curie to Charles Darwin: "Darwin, have you considered the effects of radiation on evolution?"
+🔬 6:13:33 PM - Message from Charles Darwin to Marie Curie: "Intriguing idea, Curie! Let's explore this further."
+🔬 6:13:33 PM - Message from Annonymous to Marie Curie: "330197 KABOOM!!!"
+🔬 6:13:33 PM - Retrieved 5 messages for Charles Darwin
+🔬 6:13:33 PM - Message from Charles Darwin to Isaac Newton: "Isaac, I've been pondering the evolution of your apple tree."
+🔬 6:13:33 PM - Message from Isaac Newton to Charles Darwin: "Charles, perhaps we could apply gravitational principles to natural selection?"
+🔬 6:13:33 PM - Message from Marie Curie to Charles Darwin: "Darwin, have you considered the effects of radiation on evolution?"
+🔬 6:13:33 PM - Message from Charles Darwin to Marie Curie: "Intriguing idea, Curie! Let's explore this further."
+🔬 6:13:33 PM - Message from Annonymous to Charles Darwin: "252254 KABOOM!!!"
+🔬 6:13:33 PM - Scientific Pager System demonstration completed

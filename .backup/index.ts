@@ -75,13 +75,11 @@ class ScientificPagerSystem {
 
     let affectedCount = 0;
     this.scientists.forEach((scientist) => {
-      if (scientist.id !== executorId) {
-        const randomNumber = Math.floor(Math.random() * 1000000);
-        const content = `KABOOM!!! Chaos 42: ${executor.name}'s ${executor.discovery} has been randomly altered! Your unique number is ${randomNumber}.`;
-        const message = new Message(executor, scientist, content);
-        this.messages.push(message);
-        affectedCount++;
-      }
+      const randomNumber = Math.floor(Math.random() * 1000000);
+      const content = `${randomNumber} KABOOM!!!`;
+      const message = new Message(executor, scientist, content);
+      this.messages.push(message);
+      affectedCount++;
     });
 
     FriendlyLogger.log(`Chaos 42 initiated by ${executor.name}. ${affectedCount} scientists affected!`);
@@ -92,6 +90,7 @@ class ScientificPagerSystem {
 FriendlyLogger.log("Initializing Scientific Pager System");
 const pagerSystem = new ScientificPagerSystem();
 
+const annonymous = new Scientist("0", "Annonymous", "The Big Kaboom");
 const newton = new Scientist("1", "Isaac Newton", "Law of Universal Gravitation");
 const einstein = new Scientist("2", "Albert Einstein", "Theory of Relativity");
 const curie = new Scientist("3", "Marie Curie", "Radioactivity");
@@ -101,6 +100,7 @@ pagerSystem.addScientist(newton);
 pagerSystem.addScientist(einstein);
 pagerSystem.addScientist(curie);
 pagerSystem.addScientist(darwin);
+pagerSystem.addScientist(annonymous);
 
 FriendlyLogger.log("Sending test messages");
 pagerSystem.sendMessage("1", "2", "Einstein, I've got a brilliant idea about apples!");
@@ -113,14 +113,21 @@ newtonMessages.forEach(msg => {
 });
 
 FriendlyLogger.log("Initiating Chaos 42");
-pagerSystem.executeChaos42("3");
+pagerSystem.executeChaos42("0");
 
 FriendlyLogger.log("Checking messages after Chaos 42");
+const newtonMessages2 = pagerSystem.getMessagesForScientist("1");
+newtonMessages2.forEach(msg => {
+  FriendlyLogger.log(`Message from ${msg.from.name} to ${msg.to.name}: "${msg.content}"`);
+});
 const einsteinMessages = pagerSystem.getMessagesForScientist("2");
 einsteinMessages.forEach(msg => {
   FriendlyLogger.log(`Message from ${msg.from.name} to ${msg.to.name}: "${msg.content}"`);
 });
-
+const curieMessages = pagerSystem.getMessagesForScientist("3");
+curieMessages.forEach(msg => {
+  FriendlyLogger.log(`Message from ${msg.from.name} to ${msg.to.name}: "${msg.content}"`);
+});
 const darwinMessages = pagerSystem.getMessagesForScientist("4");
 darwinMessages.forEach(msg => {
   FriendlyLogger.log(`Message from ${msg.from.name} to ${msg.to.name}: "${msg.content}"`);

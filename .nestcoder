@@ -273,28 +273,35 @@ export function dot(a: V3, b: V3): number {
 You will now be given the actual INPUT you must work with.
 
 <FILE path="/home/travis/Projects/execute-chaos-42/start:dev.stdout.txt">
-🔬 6:00:29 PM - Initializing Scientific Pager System
-🔬 6:00:29 PM - Added scientist: Isaac Newton (Law of Universal Gravitation)
-🔬 6:00:29 PM - Added scientist: Albert Einstein (Theory of Relativity)
-🔬 6:00:29 PM - Added scientist: Marie Curie (Radioactivity)
-🔬 6:00:29 PM - Added scientist: Charles Darwin (Theory of Evolution)
-🔬 6:00:29 PM - Sending test messages
-🔬 6:00:29 PM - Message sent from Isaac Newton to Albert Einstein
-🔬 6:00:29 PM - Message sent from Albert Einstein to Isaac Newton
-🔬 6:00:29 PM - Retrieving messages for Newton
-🔬 6:00:29 PM - Retrieved 2 messages for Isaac Newton
-🔬 6:00:29 PM - Message from Isaac Newton to Albert Einstein: "Einstein, I've got a brilliant idea about apples!"
-🔬 6:00:29 PM - Message from Albert Einstein to Isaac Newton: "Newton, let's discuss the fabric of spacetime."
-🔬 6:00:29 PM - Initiating Chaos 42
-🔬 6:00:29 PM - Chaos 42 initiated by Marie Curie. 3 scientists affected!
-🔬 6:00:29 PM - Checking messages after Chaos 42
-🔬 6:00:29 PM - Retrieved 3 messages for Albert Einstein
-🔬 6:00:29 PM - Message from Isaac Newton to Albert Einstein: "Einstein, I've got a brilliant idea about apples!"
-🔬 6:00:29 PM - Message from Albert Einstein to Isaac Newton: "Newton, let's discuss the fabric of spacetime."
-🔬 6:00:29 PM - Message from Marie Curie to Albert Einstein: "KABOOM!!! Chaos 42: Marie Curie's Radioactivity has been randomly altered! Your unique number is 813457."
-🔬 6:00:29 PM - Retrieved 1 messages for Charles Darwin
-🔬 6:00:29 PM - Message from Marie Curie to Charles Darwin: "KABOOM!!! Chaos 42: Marie Curie's Radioactivity has been randomly altered! Your unique number is 357309."
-🔬 6:00:29 PM - Scientific Pager System demonstration completed
+🔬 6:11:05 PM - Initializing Scientific Pager System
+🔬 6:11:05 PM - Added scientist: Isaac Newton (Law of Universal Gravitation)
+🔬 6:11:05 PM - Added scientist: Albert Einstein (Theory of Relativity)
+🔬 6:11:05 PM - Added scientist: Marie Curie (Radioactivity)
+🔬 6:11:05 PM - Added scientist: Charles Darwin (Theory of Evolution)
+🔬 6:11:05 PM - Added scientist: Annonymous (The Big Kaboom)
+🔬 6:11:05 PM - Sending test messages
+🔬 6:11:05 PM - Message sent from Isaac Newton to Albert Einstein
+🔬 6:11:05 PM - Message sent from Albert Einstein to Isaac Newton
+🔬 6:11:05 PM - Retrieving messages for Newton
+🔬 6:11:05 PM - Retrieved 2 messages for Isaac Newton
+🔬 6:11:05 PM - Message from Isaac Newton to Albert Einstein: "Einstein, I've got a brilliant idea about apples!"
+🔬 6:11:05 PM - Message from Albert Einstein to Isaac Newton: "Newton, let's discuss the fabric of spacetime."
+🔬 6:11:05 PM - Initiating Chaos 42
+🔬 6:11:05 PM - Chaos 42 initiated by Annonymous. 5 scientists affected!
+🔬 6:11:05 PM - Checking messages after Chaos 42
+🔬 6:11:05 PM - Retrieved 3 messages for Isaac Newton
+🔬 6:11:05 PM - Message from Isaac Newton to Albert Einstein: "Einstein, I've got a brilliant idea about apples!"
+🔬 6:11:05 PM - Message from Albert Einstein to Isaac Newton: "Newton, let's discuss the fabric of spacetime."
+🔬 6:11:05 PM - Message from Annonymous to Isaac Newton: "168976 KABOOM!!!"
+🔬 6:11:05 PM - Retrieved 3 messages for Albert Einstein
+🔬 6:11:05 PM - Message from Isaac Newton to Albert Einstein: "Einstein, I've got a brilliant idea about apples!"
+🔬 6:11:05 PM - Message from Albert Einstein to Isaac Newton: "Newton, let's discuss the fabric of spacetime."
+🔬 6:11:05 PM - Message from Annonymous to Albert Einstein: "396546 KABOOM!!!"
+🔬 6:11:05 PM - Retrieved 1 messages for Marie Curie
+🔬 6:11:05 PM - Message from Annonymous to Marie Curie: "56890 KABOOM!!!"
+🔬 6:11:05 PM - Retrieved 1 messages for Charles Darwin
+🔬 6:11:05 PM - Message from Annonymous to Charles Darwin: "65149 KABOOM!!!"
+🔬 6:11:05 PM - Scientific Pager System demonstration completed
 
 </FILE>
 <FILE path="index.ts" TARGET>
@@ -375,13 +382,11 @@ class ScientificPagerSystem {
 
     let affectedCount = 0;
     this.scientists.forEach((scientist) => {
-      if (scientist.id !== executorId) {
-        const randomNumber = Math.floor(Math.random() * 1000000);
-        const content = `KABOOM!!! Chaos 42: ${executor.name}'s ${executor.discovery} has been randomly altered! Your unique number is ${randomNumber}.`;
-        const message = new Message(executor, scientist, content);
-        this.messages.push(message);
-        affectedCount++;
-      }
+      const randomNumber = Math.floor(Math.random() * 1000000);
+      const content = `${randomNumber} KABOOM!!!`;
+      const message = new Message(executor, scientist, content);
+      this.messages.push(message);
+      affectedCount++;
     });
 
     FriendlyLogger.log(`Chaos 42 initiated by ${executor.name}. ${affectedCount} scientists affected!`);
@@ -392,6 +397,7 @@ class ScientificPagerSystem {
 FriendlyLogger.log("Initializing Scientific Pager System");
 const pagerSystem = new ScientificPagerSystem();
 
+const annonymous = new Scientist("0", "Annonymous", "The Big Kaboom");
 const newton = new Scientist("1", "Isaac Newton", "Law of Universal Gravitation");
 const einstein = new Scientist("2", "Albert Einstein", "Theory of Relativity");
 const curie = new Scientist("3", "Marie Curie", "Radioactivity");
@@ -401,6 +407,7 @@ pagerSystem.addScientist(newton);
 pagerSystem.addScientist(einstein);
 pagerSystem.addScientist(curie);
 pagerSystem.addScientist(darwin);
+pagerSystem.addScientist(annonymous);
 
 FriendlyLogger.log("Sending test messages");
 pagerSystem.sendMessage("1", "2", "Einstein, I've got a brilliant idea about apples!");
@@ -413,14 +420,21 @@ newtonMessages.forEach(msg => {
 });
 
 FriendlyLogger.log("Initiating Chaos 42");
-pagerSystem.executeChaos42("3");
+pagerSystem.executeChaos42("0");
 
 FriendlyLogger.log("Checking messages after Chaos 42");
+const newtonMessages2 = pagerSystem.getMessagesForScientist("1");
+newtonMessages2.forEach(msg => {
+  FriendlyLogger.log(`Message from ${msg.from.name} to ${msg.to.name}: "${msg.content}"`);
+});
 const einsteinMessages = pagerSystem.getMessagesForScientist("2");
 einsteinMessages.forEach(msg => {
   FriendlyLogger.log(`Message from ${msg.from.name} to ${msg.to.name}: "${msg.content}"`);
 });
-
+const curieMessages = pagerSystem.getMessagesForScientist("3");
+curieMessages.forEach(msg => {
+  FriendlyLogger.log(`Message from ${msg.from.name} to ${msg.to.name}: "${msg.content}"`);
+});
 const darwinMessages = pagerSystem.getMessagesForScientist("4");
 darwinMessages.forEach(msg => {
   FriendlyLogger.log(`Message from ${msg.from.name} to ${msg.to.name}: "${msg.content}"`);
@@ -429,5 +443,5 @@ darwinMessages.forEach(msg => {
 FriendlyLogger.log("Scientific Pager System demonstration completed");
 </FILE>
 <REQUEST>
-Chaos 42 should be triggered for everyone
+generate some more messages between the scientists 
 </REQUEST>
